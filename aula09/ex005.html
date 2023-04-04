@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(78, 61, 231);
+            color: rgb(255, 255, 255);
+            font: normal 13pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(`Está escrito assim: ${p1.innerText}`)
+        p1.style.color = 'black'
+        corpo.style.background = 'purple'
+        /*------------------------------------------------
+        var d = window.document.getElementById('msg')   # Aprendendo DOM
+        d.style.background = 'black'                            .      
+        d.style.color = 'green'                                 .
+        d.innerText = 'Olá mundo!'                              .
+        --------------------------------------------------
+        var d = document.getElementsByName('msg')[0] -> Elements no plural (USAR O COLCHETE PARA ÍNDICE)            .
+        d.innerText = 'Olá mundo!'                              .
+        d.style.background = 'green'                            .
+        d.style.color = 'black'                                 . 
+        --------------------------------------------------
+        var d = document.getElementsByClassName('msg')[0]
+        d.style.background = 'green'
+        d.style.color = 'black'
+        d.innerText = 'Olá Mundo!'
+        --------------------------------------------------
+        var d = document.querySelector('div#msg')
+        d.style.background = 'green'
+        d.style.color = 'black'
+        d.innerText = 'Olá Mundo!'
+        -------------------------------------------------*/
+    </script>
+    </body>
+</html>
